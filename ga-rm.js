@@ -98,7 +98,7 @@ $(function() {
   ga('send', 'event', 'user interaction', event.type, $(this).prop('id'), ga_rm_time_on_page.toFixed(1));
  }
 
- //bind trigger
+ //bind triggers
  $(ga_rm_elements).on('focusin keypress', ga_rm_startcount).blur(ga_rm_stopcount);
  $(ga_rm_hover_elements).mouseenter(ga_rm_startcount).on('mouseleave change', ga_rm_stopcount);
  $('[id].ga-rm-click').on('click',ga_rm_tracksingle);
