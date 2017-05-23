@@ -95,7 +95,7 @@ $(function() {
 
  //function tracksingle (time on page)
  var ga_rm_tracksingle=function(event) {
-  ga('send', 'event', 'user interaction', event.type, $(this).prop('id'), ga_rm_time_on_page.toFixed(1));
+  ga('send', 'event', 'user interaction', event.type, $(this).prop('id'), parseInt(ga_rm_time_on_page.toFixed(1)));
  }
 
  //bind triggers
