@@ -31,7 +31,8 @@ $(function() {
 
  //count time on page
  var ga_rm_globalcounter=setInterval(function() {
-   ga_rm_time_on_page=ga_rm_time_on_page+0.1; }, 100);
+  ga_rm_time_on_page=ga_rm_time_on_page+0.1;
+ }, 100);
 
  //function startcount
  var ga_rm_startcount=function() {
