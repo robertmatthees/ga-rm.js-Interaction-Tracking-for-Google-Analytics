@@ -27,14 +27,14 @@ $(function() {
  var ga_rm_hover_elements = 'label, select, input[type="checkbox"], input[type="radio"], input[type="range"], .ga-rm-hover:not(.ga-rm-focus)';
 
  //init counter
- var ga_rm_counter=0;
+ var ga_rm_counter = 0;
 
  //function startcount
  var ga_rm_startcount = function() {
 
   //clear interval, get element
   ga_rm_stopcount();
-  $el=$(this);
+  $el = $(this);
 
   //check if element is a <label>
   if($el.is('label')) {
@@ -70,7 +70,7 @@ $(function() {
   //create array
   var tracked = [];
   $(ga_rm_elements).each(function() {
-   var this_row={}; $el=$(this);
+   var this_row = {}; $el = $(this);
    if($el.data('ga_rm_time')>0.1) {
     if($el.prop('id')!="") { this_row[0] = $el.prop('id'); }
     else { this_row[0] = $el.attr('name'); }
