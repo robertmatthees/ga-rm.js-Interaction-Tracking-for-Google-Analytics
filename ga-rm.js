@@ -27,7 +27,11 @@ $(function() {
  var ga_rm_hover_elements='label, select, input[type="checkbox"], input[type="radio"], input[type="range"], .ga-rm-hover:not(.ga-rm-focus)';
 
  //init counter
- var ga_rm_counter=0;
+ var ga_rm_counter=0, ga_rm_time_on_page=0;
+
+ //count time on page
+ var ga_rm_globalcounter=setInterval(function() {
+   ga_rm_time_on_page=ga_rm_time_on_page+0.1; }, 100);
 
  //function startcount
  var ga_rm_startcount=function() {
@@ -90,10 +94,10 @@ $(function() {
 
  //function tracksingle (time on page)
  var ga_rm_tracksingle=function(event) {
-  ga('send', 'event', 'user interaction', event.type, $(this).prop('id'), parseInt((event.timeStamp/1000).toFixed(1)));
+  ga('send', 'event', 'user interaction', event.type, $(this).prop('id'), ga_rm_time_on_page.toFixed(1));
  }
 
- //bind triggers
+ //bind trigger
  $(ga_rm_elements).on('focusin keypress', ga_rm_startcount).blur(ga_rm_stopcount);
  $(ga_rm_hover_elements).mouseenter(ga_rm_startcount).on('mouseleave change', ga_rm_stopcount);
  $('[id].ga-rm-click').on('click',ga_rm_tracksingle);
