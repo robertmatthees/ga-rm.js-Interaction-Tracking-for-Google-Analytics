@@ -42,7 +42,7 @@ In Custom Tracking with HTML-Classes (below), please always use a unique ID for 
 
 <strong>Custom User Interaction Time Tracking</strong>
 
-Activate User Interaction Time Tacking to a Custom Element/DOM, simply by adding <code><b>class="ga-rm-hover"</b></code> (start: mouseenter | stop: mouseleave change) <b>OR</b> <code><b>class="ga-rm-focus"</b></code> (start: focusin keypress | stop: blur). For example:
+Activate User Interaction Time Tacking to a Custom Element/DOM simply by adding <code><b>class="ga-rm-hover"</b></code> (start: mouseenter | stop: mouseleave change) <b>OR</b> <code><b>class="ga-rm-focus"</b></code> (start: focusin keypress | stop: blur) to the Element/DOM like Adspace- or Teaser-DIVs on your website. For example:
 
 <code>&lt;div id="mydiv" class="ga-rm-hover"&gt;&lt;/div&gt;</code>
 
@@ -52,7 +52,7 @@ Activate User Interaction Time Tacking to a Custom Element/DOM, simply by adding
 
 <strong>Custom Click Tracking / Time on Page until Click</strong>
 
-Activate Click Tracking (Time on Page until Click) in Google Analytics by adding <code><b>class="ga-rm-click"</b></code> to the Element/DOM like Call-to-Action-Buttons. For example:
+Activate Click Tracking (Time on Page until Click) in Google Analytics by adding <code><b>class="ga-rm-click"</b></code> to the Element/DOM like a Call-to-Action-Button or Download-Links. For example:
 
 <code>&lt;div id="mydiv" class="ga-rm-click"&gt;&lt;/div&gt;</code>
 
@@ -76,7 +76,7 @@ Track for how long an Element/DOM was visible in a user's browser simply by addi
 
 <strong>Custom Scroll Tracking / Time until Scroll Depth - TO DO</strong>
 
-Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll-top"</b></code> <b>OR/AND</b> <code><b>class="ga-rm-scroll-bottom"</b></code> to the Element/DOM like your Content-Container or Call-to-Action to find out how long it takes that a user scrolls until its top or bottom. For example:
+Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll-top"</b></code> <b>OR/AND</b> <code><b>class="ga-rm-scroll-bottom"</b></code> to the Element/DOM like your Content-Container or Call-to-Action to find out how long it takes that a user scrolls until its top or bottom position. For example:
 
 <code>&lt;div id="mydiv" class="ga-rm-scroll-top"&gt;&lt;/div&gt;</code>
 
@@ -86,7 +86,7 @@ Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <
 
 <strong>Combine Tracking Methods</strong>
 
-You can easily combine several Custom Tracking Methods by adding all the according classes:
+You can easily combine several Custom Tracking Methods by adding all the according classes to the Element/DOM:
 
 <code>&lt;div id="mydiv" class="ga-rm-hover ga-rm-scroll-top ga-rm-scroll-bottom ga-rm-visible"&gt;&lt;/div&gt;</code>
 
