@@ -105,4 +105,5 @@ In Large Scale Enterprise Tracking and being aware of <a href="https://developer
 --------
 
 Copyright (C) 2017 <a href="https://www.robert-matthees.de">Robert Matthees</a> 
+
 GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
