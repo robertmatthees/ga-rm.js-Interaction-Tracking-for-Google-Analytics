@@ -190,8 +190,8 @@
          if(plugin.settings.scroll) {
              $el = $('body');
              $el.addClass('ga-rm-scroll');
-             //if no id, set it to 'body'
-             if($el.prop('id') == "") { $el.attr('id', 'body'); }
+             //if no id, set it to 'body-scroll'
+             if($el.prop('id') == "") { $el.attr('id', 'body-scroll'); }
          }
 
          //bind triggers
