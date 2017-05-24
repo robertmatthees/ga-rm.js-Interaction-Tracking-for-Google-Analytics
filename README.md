@@ -60,7 +60,7 @@ Activate User Interaction Time Tacking to a Custom Element/DOM simply by adding 
 
 --------
 
-<strong>Custom Click Tracking / Time on Page until Click</strong>
+<h2>Custom Click Tracking / Time on Page until Click</h2>
 
 Activate Click Tracking (Time on Page until Click) in Google Analytics by adding <code><b>class="ga-rm-click"</b></code> to the Element/DOM like a Call-to-Action-Button or Download-Links. For example:
 
