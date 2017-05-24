@@ -26,15 +26,15 @@ The default <b>Scroll Tracking</b> area is the document's body height.
 
 <strong>Custom Options</strong>
 
-You can Switch Off the Default Tracking Options:
+You can switch off the Default Tracking Options:
 
 <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form:0});&lt;/script&gt;</code> (no default Form Analysis - bool)
 
 <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({scroll:0});&lt;/script&gt;</code> (no default Scroll Tracking - bool)
 
-<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({min_form_timme:10});&lt;/script&gt;</code> (Minimum Interaction with Element before it gets countet in Google Analytics - in Seconds)
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({min_itimme:10});&lt;/script&gt;</code> (Minimum Interaction Time with an Element from when it gets tracked in Seconds - integer)
 
-<b>or:</b> <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form: 0, scroll:0, min_form_timme:10});&lt;/script&gt;</code>
+<b>or:</b> <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form: 0, scroll:0, min_itimme:10});&lt;/script&gt;</code>
 
 --------
 
@@ -68,7 +68,7 @@ Activate Click Tracking (Time on Page until Click) in Google Analytics by adding
 
 --------
 
-<strong>Custom Scroll Tracking / Scroll Depth - TO DO</strong>
+<strong>Custom Scroll Tracking / Scroll Depth</strong>
 
 Activate Custom Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll"</b></code> to the Element/DOM like your Content-Container. For example:
 
@@ -84,7 +84,7 @@ Track for how long an Element/DOM was visible in a user's browser simply by addi
 
 --------
 
-<strong>Custom Scroll Tracking / Time until Scroll Depth - TO DO</strong>
+<strong>Custom Scroll Tracking / Time until Scroll Depth</strong>
 
 Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll-top"</b></code> <b>OR/AND</b> <code><b>class="ga-rm-scroll-bottom"</b></code> to the Element/DOM like your Content-Container or Call-to-Action to find out how long it takes that a user scrolls until its top or bottom position. For example:
 
