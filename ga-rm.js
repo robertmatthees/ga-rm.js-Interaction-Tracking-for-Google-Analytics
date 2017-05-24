@@ -112,7 +112,7 @@
          plugin.settings = $.extend({}, defaults, options);
 
          //default tracking elements
-         var ga_rm_elements = "ga-rm-focus:not(.ga-rm-hover)";
+         var ga_rm_elements = ".ga-rm-focus:not(.ga-rm-hover)";
          var ga_rm_hover_elements = ".ga-rm-hover:not(.ga-rm-focus)";
          if(plugin.settings.def) {
              //default elements triggered on: focusin keypress (start) & blur (stop)
