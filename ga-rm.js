@@ -1,4 +1,4 @@
-/*  ga-rm.js (version: 1.0)
+/*  ga-rm.js (version: 0.1)
     Interaction Tracking for Google Analytics
     Copyright (C) 2017 Robert Matthees (contact: www.robert-matthees.de)
 
@@ -8,7 +8,7 @@
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
@@ -34,31 +34,31 @@
          //run through elements with no tracking hit
          $('[id].ga-rm-scroll:not(.ga-rm-scroll-tracked), [id].ga-rm-scroll-top:not(.ga-rm-scroll-top-tracked), [id].ga-rm-scroll-bottom:not(.ga-rm-scroll-bottom-tracked)').each(function(){
              //get element position
-             $els = $(this);
-             var eh = $els.outerHeight();
-             var etop = $els.offset().top;
+             $el_s = $(this);
+             var eh = $el_s.outerHeight();
+             var etop = $el_s.offset().top;
              var spercentage = ((stop-etop+wh) / eh) * 100;
 
              //scroll depth tracking
-             if (($els.hasClass('ga-rm-scroll')) && (!$els.hasClass('ga-rm-scroll-tracked'))) {
+             if (($el_s.hasClass('ga-rm-scroll')) && (!$el_s.hasClass('ga-rm-scroll-tracked'))) {
                  if(spercentage<99) {
-                     $els.data('ga_rm_scroll', spercentage);
+                     $el_s.data('ga_rm_scroll', spercentage);
                  } else {
-                    ga('send', 'event', 'user interaction', 'scroll depth', $els.prop('id'), 100);
-                    $els.addClass('ga-rm-scroll-tracked');
+                    ga('send', 'event', 'user interaction', 'scroll depth', $el_s.prop('id'), 100);
+                    $el_s.addClass('ga-rm-scroll-tracked');
                  }
              }
 
              //scroll time on page until top
-             if (($els.hasClass('ga-rm-scroll-top')) && (!$els.hasClass('ga-rm-scroll-top-tracked')) && (spercentage>=1)) {
-                 ga('send', 'event', 'user interaction', 'scroll top', $els.prop('id'), parseInt(ga_rm_time_on_page.toFixed(1)));
-                 $els.addClass('ga-rm-scroll-top-tracked');
+             if (($el_s.hasClass('ga-rm-scroll-top')) && (!$el_s.hasClass('ga-rm-scroll-top-tracked')) && (spercentage>=1)) {
+                 ga('send', 'event', 'user interaction', 'scroll top', $el_s.prop('id'), parseInt(ga_rm_time_on_page.toFixed(1)));
+                 $el_s.addClass('ga-rm-scroll-top-tracked');
              }
 
              //scroll time on page until bottom
-             if (($els.hasClass('ga-rm-scroll-bottom')) && (!$els.hasClass('ga-rm-scroll-bottom-tracked')) && (spercentage>=99)) {
-                 ga('send', 'event', 'user interaction', 'scroll bottom', $els.prop('id'), parseInt(ga_rm_time_on_page.toFixed(1)));
-                 $els.addClass('ga-rm-scroll-bottom-tracked');
+             if (($el_s.hasClass('ga-rm-scroll-bottom')) && (!$el_s.hasClass('ga-rm-scroll-bottom-tracked')) && (spercentage>=99)) {
+                 ga('send', 'event', 'user interaction', 'scroll bottom', $el_s.prop('id'), parseInt(ga_rm_time_on_page.toFixed(1)));
+                 $el_s.addClass('ga-rm-scroll-bottom-tracked');
              }
          });
      }, 100);
@@ -126,7 +126,7 @@
          var tracked = [];
          $(ga_rm_elements).each(function() {
              var this_row = {}; $el = $(this);
-             if($el.data('ga_rm_time') > min_form_time) {
+             if($el.data('ga_rm_time') > min_itime) {
                  if($el.prop('id') != "") {
                      this_row[0] = $el.prop('id');
                  } else {
@@ -162,13 +162,15 @@
 
      //init plugin
      var plugin = this;
-     var ga_rm_elements = 0, ga_rm_hover_elements = 0, min_form_time = 0.1;
+     var ga_rm_elements = 0, ga_rm_hover_elements = 0, min_itime = 0.1;
      plugin.settings = {};
      plugin.init = function() {
+
          //get options
          plugin.settings = $.extend({}, defaults, options);
          ga_rm_elements = "ga-rm-focus:not(.ga-rm-hover)";
          ga_rm_hover_elements = ".ga-rm-hover:not(.ga-rm-focus)";
+
          //default form tracking (element list)
          if(plugin.settings.form) {
              //default elements triggered on: focusin keypress (start) & blur (stop)
@@ -181,7 +183,7 @@
          }
          
          if(plugin.settings.min_itime > 0) {
-             min_form_time = plugin.settings.min_itime;
+             min_itime = plugin.settings.min_itime;
          }
          
          //default scroll tracking (add class to body)
@@ -195,8 +197,7 @@
          //bind triggers
          $(ga_rm_elements).on('focusin keypress', ga_rm_startcount).blur(ga_rm_stopcount);
          $(ga_rm_hover_elements).mouseenter(ga_rm_startcount).on('mouseleave change', ga_rm_stopcount);
-       //  $('[id].ga-rm-click').on('click',ga_rm_tracksingle);
-          $('[id].ga-rm-click').on('click',ga_rm_trackcount);
+         $('[id].ga-rm-click').on('click',ga_rm_tracksingle);
          $(window).on('beforeunload', ga_rm_trackcount);
      }
 
