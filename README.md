@@ -8,7 +8,7 @@ Version: Development Alpha Test (working well, no errors | Scroll Tracking still
 
 Simply add ga-rm.js to your Source Code and it automatically starts tracking <b>User Interaction Time with Forms Fields</b> plus <b>Scroll Depth Tracking</b> in Google Analytics on all pages of your domain:
 
-<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt$.ga_rm();&lt;/script&gt</code>
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm();&lt;/script&gt;</code>
 
 No further Setup / Configuration needed. (Dependencies: Google Analytics & jQuery)
 
@@ -28,7 +28,7 @@ The default <b>Scroll Tracking</b> area is the user's browser window height. (TO
 
 You can Switch Off the Default Tracking Options with:
 
-<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt$.ga_rm({def:0});&lt;/script&gt</code>
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({def:0});&lt;/script&gt;</code>
 
 --------
 
