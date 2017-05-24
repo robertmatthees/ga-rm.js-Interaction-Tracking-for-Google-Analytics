@@ -28,13 +28,13 @@ The default <b>Scroll Tracking</b> area is the document's body height.
 
 You can switch off the Default Tracking Options:
 
-<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form:0});&lt;/script&gt;</code> (no default Form Analysis - bool)
+<code>$.ga_rm({form:0});</code> - Default Form Analysis (bool: 0 off / 1 on | default: 1)
 
-<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({scroll:0});&lt;/script&gt;</code> (no default Scroll Tracking - bool)
+<code>$.ga_rm({scroll:0});</code> - Default Scroll Tracking (bool: 0 off / 1 on | default: 1)
 
-<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({min_itimme:10});&lt;/script&gt;</code> (Minimum Interaction Time with an Element from when it gets tracked in Seconds - integer)
+<code>$.ga_rm({min_itimme:10});</code> - Minimum Interaction Time from when Element (integer: in Seconds)
 
-<b>or:</b> <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form: 0, scroll:0, min_itimme:10});&lt;/script&gt;</code>
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form: 0, scroll:0, min_itimme:10});&lt;/script&gt;</code>
 
 --------
 
