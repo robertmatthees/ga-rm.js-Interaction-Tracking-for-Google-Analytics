@@ -24,7 +24,7 @@ The default <b>Scroll Tracking</b> area is the document's body height.
 
 --------
 
-<h2>Custom Options</h2>
+<h2>Custom Initialisation</h2>
 
 You can switch off/on the Default Tracking Options ples set the Minimum Interaction Time from when an Element gets tracked:
 
