@@ -110,6 +110,7 @@
      plugin.init = function() {
          //get options
          plugin.settings = $.extend({}, defaults, options);
+
          //default tracking elements
          var ga_rm_elements = "ga-rm-focus:not(.ga-rm-hover)";
          var ga_rm_hover_elements = ".ga-rm-hover:not(.ga-rm-focus)";
@@ -122,6 +123,7 @@
              //default elements triggered on: mouseenter (start) & mouseleave change (stop)
              var ga_rm_hover_elements = ga_rm_hover_elements + ', label, select, input[type="checkbox"], input[type="radio"], input[type="range"]';
          }
+
          //bind triggers
          $(ga_rm_elements).on('focusin keypress', ga_rm_startcount).blur(ga_rm_stopcount);
          $(ga_rm_hover_elements).mouseenter(ga_rm_startcount).on('mouseleave change', ga_rm_stopcount);
