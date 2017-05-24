@@ -76,14 +76,6 @@ Activate Custom Scroll Depth Tracking in Google Analytics by adding <code><b>cla
 
 --------
 
-<strong>Custom Scroll Tracking / Visible Time - TO DO</strong>
-
-Track for how long an Element/DOM was visible in a user's browser simply by adding <code><b>class="ga-rm-scroll-visible"</b></code> to the Element/DOM like a Content-Container with an important Call-to-Action. For example:
-
-<code>&lt;div id="mydiv" class="ga-rm-scroll-visible"&gt;&lt;/div&gt;</code>
-
---------
-
 <strong>Custom Scroll Tracking / Time until Scroll Depth</strong>
 
 Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll-top"</b></code> <b>OR/AND</b> <code><b>class="ga-rm-scroll-bottom"</b></code> to the Element/DOM like your Content-Container or Call-to-Action to find out how long it takes that a user scrolls until its top or bottom position. For example:
@@ -111,6 +103,14 @@ The best way to test your new tracking is via the Event-Section of the Real Time
 <strong>Google Analytics Hit Limits</strong>
 
 In Large Scale Enterprise Tracking and being aware of <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/limits-quotas">Google's Data collection limit</a>, you may use this script just within your most important funnels / switch off default tracking unless you are on Google Analytics 360.
+
+--------
+
+<strong>TO DO: Custom Scroll Tracking / Visible Time (coming soon)</strong>
+
+Track for how long an Element/DOM was visible in a user's browser simply by adding <code><b>class="ga-rm-scroll-visible"</b></code> to the Element/DOM like a Content-Container with an important Call-to-Action. For example:
+
+<code>&lt;div id="mydiv" class="ga-rm-scroll-visible"&gt;&lt;/div&gt;</code>
 
 --------
 
