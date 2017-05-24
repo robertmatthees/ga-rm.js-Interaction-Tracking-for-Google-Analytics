@@ -1,6 +1,6 @@
 # ga-rm.js Easy to implement Form Analysis plus Click- & Scrolltracking for Google Analytics
 
-<strong>Implementation</strong>
+<h2>Implementation</h2>
 
 Simply add ga-rm.js to your Source Code and it automatically starts tracking <b>User Interaction Time with Forms Fields</b> plus <b>Scroll Depth Tracking</b> in Google Analytics on all pages of your domain:
 
@@ -14,7 +14,7 @@ In addition, you can easily implement <b>Click- and Scrolltracking for Custom El
 
 --------
 
-<strong>Default Tracking Options</strong>
+<h2>Default Tracking Options</h2>
 
 Per default, ga-rm.js tracks the <b>User Interaction Time for Form Analysis</b> of the following Elements:
 - Select Dropdowns, Range Slider, Checkboxes, Radio Buttons, Input Labels <i>(start: mouseenter | stop: mouseleave change)</i>
@@ -24,7 +24,7 @@ The default <b>Scroll Tracking</b> area is the document's body height.
 
 --------
 
-<strong>Custom Options</strong>
+<h2>Custom Options</h2>
 
 You can switch off the Default Tracking Options:
 
@@ -38,7 +38,7 @@ You can switch off the Default Tracking Options:
 
 --------
 
-<strong>Tracking Reference</strong>
+<h2>Tracking Reference in Google Analytics</h2>
 
 In Form Analysis / User Interaction Time Tracking, the Element's ID is used as Tracking Reference in Google Analytics (Event Label). If there is no ID, the Name-Attribute is used as Tracking Reference instead. If there is no Name-Attribute either, no tracking will take place. 
 
@@ -50,7 +50,7 @@ In Custom Tracking with HTML-Classes (below), please always use a unique ID for 
 
 --------
 
-<strong>Custom User Interaction Time Tracking</strong>
+<h2>Custom User Interaction Time Tracking</h2>
 
 Activate User Interaction Time Tacking to a Custom Element/DOM simply by adding <code><b>class="ga-rm-hover"</b></code> (start: mouseenter | stop: mouseleave change) <b>OR</b> <code><b>class="ga-rm-focus"</b></code> (start: focusin keypress | stop: blur) to the Element/DOM like Adspace- or Teaser-DIVs on your website. For example:
 
@@ -68,7 +68,7 @@ Activate Click Tracking (Time on Page until Click) in Google Analytics by adding
 
 --------
 
-<strong>Custom Scroll Tracking / Scroll Depth</strong>
+<h2>Custom Scroll Tracking / Scroll Depth</h2>
 
 Activate Custom Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll"</b></code> to the Element/DOM like your Content-Container. For example:
 
@@ -76,7 +76,7 @@ Activate Custom Scroll Depth Tracking in Google Analytics by adding <code><b>cla
 
 --------
 
-<strong>Custom Scroll Tracking / Time until Scroll Depth</strong>
+<h2>Custom Scroll Tracking / Time until Scroll Depth</h2>
 
 Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll-top"</b></code> <b>OR/AND</b> <code><b>class="ga-rm-scroll-bottom"</b></code> to the Element/DOM like your Content-Container or Call-to-Action to find out how long it takes that a user scrolls until its top or bottom position. For example:
 
@@ -86,7 +86,7 @@ Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <
 
 --------
 
-<strong>Combine Tracking Methods</strong>
+<h2>Combine Tracking Methods</h2>
 
 You can easily combine several Custom Tracking Methods by adding all the according classes to the Element/DOM:
 
@@ -94,19 +94,19 @@ You can easily combine several Custom Tracking Methods by adding all the accordi
 
 -------
 
-<strong>Test your Tracking</strong>
+<h2>Test your Tracking</h2>
 
 The best way to test your new tracking is via the Event-Section of the Real Time Report in your Google Analytics Account.
 
 -------
 
-<strong>Google Analytics Hit Limits</strong>
+<h2>Google Analytics Hit Limits</h2>
 
 In Large Scale Enterprise Tracking and being aware of <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/limits-quotas">Google's Data collection limit</a>, you may use this script just within your most important funnels / switch off default tracking unless you are on Google Analytics 360.
 
 --------
 
-<strong>TO DO: Custom Scroll Tracking / Visible Time (coming soon)</strong>
+<h2>TO DO: Custom Scroll Tracking / Visible Time (coming soon)</h2>
 
 Track for how long an Element/DOM was visible in a user's browser simply by adding <code><b>class="ga-rm-scroll-visible"</b></code> to the Element/DOM like a Content-Container with an important Call-to-Action. For example:
 
