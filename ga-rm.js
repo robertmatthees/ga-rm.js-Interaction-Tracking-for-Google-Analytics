@@ -157,7 +157,7 @@
      var defaults = {
          form: 1,
          scroll: 1,
-         min_form_time: 0
+         min_itime: 0
      }
 
      //init plugin
@@ -180,8 +180,8 @@
              ga_rm_hover_elements = ga_rm_hover_elements + ', label, select, input[type="checkbox"], input[type="radio"], input[type="range"]';
          }
          
-         if(plugin.settings.min_form_time > 0) {
-             min_form_time = plugin.settings.min_form_time;
+         if(plugin.settings.min_itime > 0) {
+             min_form_time = plugin.settings.min_itime;
          }
          
          //default scroll tracking (add class to body)
