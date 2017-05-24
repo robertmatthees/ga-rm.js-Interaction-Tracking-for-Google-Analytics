@@ -102,7 +102,7 @@
          def: 1,
          max_it_el: 0,
          min_it_s: 0
-     }
+     };
 
      //init plugin
      var plugin = this;
