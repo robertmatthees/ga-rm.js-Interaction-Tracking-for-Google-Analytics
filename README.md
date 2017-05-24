@@ -34,7 +34,7 @@ You can Switch Off the Default Tracking Options:
 
 <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({min_form_timme:10});&lt;/script&gt;</code> (Minimum Interaction with Element before it gets countet in Google Analytics - in Seconds)
 
-<b>or:</b> <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({scroll:0, form: 0, min_form_timme:10});&lt;/script&gt;</code>
+<b>or:</b> <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form: 0, scroll:0, min_form_timme:10});&lt;/script&gt;</code>
 
 --------
 
