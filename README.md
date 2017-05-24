@@ -50,7 +50,7 @@ In Custom Tracking with HTML-Classes (below), please always use a unique ID for 
 
 --------
 
-<h2>Custom User Interaction Time Tracking</h2>
+<h2>Custom User Interaction Time Tracking (s)</h2>
 
 Activate User Interaction Time Tacking to a Custom Element/DOM simply by adding <code><b>class="ga-rm-hover"</b></code> (start: mouseenter | stop: mouseleave change) <b>OR</b> <code><b>class="ga-rm-focus"</b></code> (start: focusin keypress | stop: blur) to the Element/DOM like Adspace- or Teaser-DIVs on your website. For example:
 
@@ -60,7 +60,7 @@ Activate User Interaction Time Tacking to a Custom Element/DOM simply by adding 
 
 --------
 
-<h2>Custom Click Tracking / Time on Page until Click</h2>
+<h2>Custom Click Tracking / Time on Page until Click (seconds)</h2>
 
 Activate Click Tracking (Time on Page until Click) in Google Analytics by adding <code><b>class="ga-rm-click"</b></code> to the Element/DOM like a Call-to-Action-Button or Download-Links. For example:
 
@@ -68,15 +68,17 @@ Activate Click Tracking (Time on Page until Click) in Google Analytics by adding
 
 --------
 
-<h2>Custom Scroll Tracking / Scroll Depth</h2>
+<h2>Custom Scroll Tracking / Scroll Depth (1-100%)</h2>
 
 Activate Custom Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll"</b></code> to the Element/DOM like your Content-Container. For example:
 
 <code>&lt;div id="mydiv" class="ga-rm-scroll"&gt;&lt;/div&gt;</code>
 
+Note: The value returned by <code><b>class="ga-rm-scroll"</b></code> can be negative if the element wasn't in the user's viewport at all. If you want to receive just values from Scrolling inside an Element (1-100%), use <code><b>class="ga-rm-scroll-in"</b></code> to get the In-Element Scroll Depth Percentage in Google Analytics.
+
 --------
 
-<h2>Custom Scroll Tracking / Time until Scroll Depth</h2>
+<h2>Custom Scroll Tracking / Time until Scroll Depth (seconds)</h2>
 
 Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll-top"</b></code> <b>OR/AND</b> <code><b>class="ga-rm-scroll-bottom"</b></code> to the Element/DOM like your Content-Container or Call-to-Action to find out how long it takes that a user scrolls until its top or bottom position. For example:
 
