@@ -26,7 +26,7 @@ The default <b>Scroll Tracking</b> area is the document's body height (tracked f
 
 <h2>Custom Initialisation</h2>
 
-You can switch off/on the Default Tracking Options ples set the Minimum Interaction Time from when an Element gets tracked:
+You can <b>Switch off/on the Default Tracking</b> Options and <b>Set the Minimum Interaction Time</b> from when an Element gets tracked:
 
 <code>form:0</code> - Default Form Analysis (bool: 0 off / 1 on | default: 1)
 
@@ -40,19 +40,19 @@ You can switch off/on the Default Tracking Options ples set the Minimum Interact
 
 <h2>Tracking Reference in Google Analytics</h2>
 
-In Form Analysis / User Interaction Time Tracking, the Element's ID is used as Tracking Reference in Google Analytics (Event Label). If there is no ID, the Name-Attribute is used as Tracking Reference instead. If there is no Name-Attribute either, no tracking will take place. 
+In Form Analysis / User Interaction Time Tracking, the <b>Element's ID</b> is used as Tracking Reference in Google Analytics (Event Label). If there is no ID, the <b>Name-Attribute</b> is used as Tracking Reference instead. If there is no Name-Attribute either, no tracking will take place. 
 
 The time a user is hovering an Input Label will be counted at the Field with the according ID. For example:
 
 <code>&lt;label for="pwd"&gt;Password:&lt;/label&gt; &lt;input type="password" id="pwd"&gt;</code> (label tracked as "pwd" in Google Analytics)
 
-In Custom Tracking with HTML-Classes (below), please always use a unique ID for each Element (just Custom User Interaction Time Tracking works with Name-Attributes as Tracking References too).
+In <b>Custom Tracking with HTML-Classes</b> (below), please <b>always use a unique ID</b> for each Element (just Custom User Interaction Time Tracking works with Name-Attributes as Tracking References too).
 
 --------
 
 <h2>Custom User Interaction Time Tracking (seconds)</h2>
 
-Activate User Interaction Time Tacking to a Custom Element/DOM simply by adding <code><b>class="ga-rm-hover"</b></code> (start: mouseenter | stop: mouseleave change) <b>OR</b> <code><b>class="ga-rm-focus"</b></code> (start: focusin keypress | stop: blur) to the Element/DOM like Adspace- or Teaser-DIVs on your website. For example:
+Activate <b>User Interaction Time Tacking to a Custom Element/DOM</b> simply by adding <code><b>class="ga-rm-hover"</b></code> (start: mouseenter | stop: mouseleave change) <b>OR</b> <code><b>class="ga-rm-focus"</b></code> (start: focusin keypress | stop: blur) to the Element/DOM like Adspace- or Teaser-DIVs on your website. For example:
 
 <code>&lt;div id="mydiv" class="ga-rm-hover"&gt;&lt;/div&gt;</code>
 
@@ -62,7 +62,7 @@ Activate User Interaction Time Tacking to a Custom Element/DOM simply by adding 
 
 <h2>Custom Click Tracking / Time on Page until Click (seconds)</h2>
 
-Activate Click Tracking (Time on Page until Click) in Google Analytics by adding <code><b>class="ga-rm-click"</b></code> to the Element/DOM like a Call-to-Action-Button or Download-Links. For example:
+Activate <b>Click Tracking (Time on Page until Click) in Google Analytics</b> by adding <code><b>class="ga-rm-click"</b></code> to the Element/DOM like a Call-to-Action-Button or Download-Links. For example:
 
 <code>&lt;div id="mydiv" class="ga-rm-click"&gt;&lt;/div&gt;</code>
 
@@ -70,7 +70,7 @@ Activate Click Tracking (Time on Page until Click) in Google Analytics by adding
 
 <h2>Custom Scroll Tracking / Scroll Depth (1-100%)</h2>
 
-Activate Custom Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll"</b></code> to the Element/DOM like your Content-Container. For example:
+Activate Custom <b>Scroll Depth Tracking in Google Analytics</b> by adding <code><b>class="ga-rm-scroll"</b></code> to the Element/DOM like your Content-Container. For example:
 
 <code>&lt;div id="mydiv" class="ga-rm-scroll"&gt;&lt;/div&gt;</code>
 
@@ -80,7 +80,7 @@ Note: The value returned by <code><b>class="ga-rm-scroll"</b></code> can be nega
 
 <h2>Custom Scroll Tracking / Time until Scroll Depth (seconds)</h2>
 
-Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <code><b>class="ga-rm-scroll-top"</b></code> <b>OR/AND</b> <code><b>class="ga-rm-scroll-bottom"</b></code> to the Element/DOM like your Content-Container or Call-to-Action to find out how long it takes that a user scrolls until its top or bottom position. For example:
+Activate Custom <b>Time until Scroll Depth Tracking in Google Analytics</b> by adding <code><b>class="ga-rm-scroll-top"</b></code> <b>OR/AND</b> <code><b>class="ga-rm-scroll-bottom"</b></code> to the Element/DOM like your Content-Container or Call-to-Action to find out how long it takes that a user scrolls until its top or bottom position. For example:
 
 <code>&lt;div id="mydiv" class="ga-rm-scroll-top"&gt;&lt;/div&gt;</code>
 
@@ -90,7 +90,7 @@ Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <
 
 <h2>Combine Tracking Methods</h2>
 
-You can easily combine several Custom Tracking Methods by adding all the according classes to the Element/DOM:
+You can easily <b>Combine Custom Tracking Methods</b> by adding all the according classes to the Element/DOM:
 
 <code>&lt;div id="mydiv" class="ga-rm-hover ga-rm-scroll-top ga-rm-scroll-bottom ga-rm-click"&gt;&lt;/div&gt;</code>
 
@@ -98,7 +98,7 @@ You can easily combine several Custom Tracking Methods by adding all the accordi
 
 <h2>Test your Tracking</h2>
 
-The best way to test your new tracking is via the Event-Section of the Real Time Report in your Google Analytics Account.
+The best way to test your new tracking is via the <b>Event-Section of the Real Time Report</b> in your Google Analytics Account.
 
 -------
 
