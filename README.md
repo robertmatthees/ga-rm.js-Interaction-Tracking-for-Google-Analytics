@@ -104,7 +104,7 @@ The best way to test your new tracking is via the <b>Event-Section of the Real T
 
 <h2>Google Analytics Hit Limits</h2>
 
-In Large Scale Enterprise Tracking and being aware of <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/limits-quotas">Google's Data collection limit</a>, you may use this script just within your most important funnels / switch off default tracking / set a minimum interaction time unless you are on Google Analytics 360.
+In <b>Large Scale Enterprise Tracking</b> and being aware of <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/limits-quotas">Google's Data collection limit</a>, you may use this script just within your most important funnels / switch off default tracking / set a minimum interaction time unless you are on Google Analytics 360.
 
 --------
 
