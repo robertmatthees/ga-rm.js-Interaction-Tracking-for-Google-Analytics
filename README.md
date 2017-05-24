@@ -26,7 +26,7 @@ The default <b>Scroll Tracking</b> area is the document's body height.
 
 <h2>Custom Options</h2>
 
-You can switch off the Default Tracking Options :
+You can switch off/on the Default Tracking Options ples set the Minimum Interaction Time from when an Element gets tracked:
 
 <code>form:0</code> - Default Form Analysis (bool: 0 off / 1 on | default: 1)
 
@@ -102,7 +102,7 @@ The best way to test your new tracking is via the Event-Section of the Real Time
 
 <h2>Google Analytics Hit Limits</h2>
 
-In Large Scale Enterprise Tracking and being aware of <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/limits-quotas">Google's Data collection limit</a>, you may use this script just within your most important funnels / switch off default tracking unless you are on Google Analytics 360.
+In Large Scale Enterprise Tracking and being aware of <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/limits-quotas">Google's Data collection limit</a>, you may use this script just within your most important funnels / switch off default tracking / set a minimum interaction time unless you are on Google Analytics 360.
 
 --------
 
