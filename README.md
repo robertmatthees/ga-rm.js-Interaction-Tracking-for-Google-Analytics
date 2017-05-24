@@ -8,7 +8,7 @@ Version: Development Alpha Test (working well, no errors | Scroll Tracking still
 
 Simply add ga-rm.js to your Source Code and it automatically starts tracking <b>User Interaction Time with Forms Fields</b> plus <b>Scroll Depth Tracking</b> in Google Analytics on all pages of your domain:
 
-<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt$.ga_rm();&lt;/script&gt</code>
 
 No further Setup / Configuration needed. (Dependencies: Google Analytics & jQuery)
 
@@ -25,6 +25,10 @@ Per default, ga-rm.js tracks the <b>User Interaction Time for Form Analysis</b> 
 - Textareas, Inpout Text Fields, Input Password Fields, Date Pickers and all other HTML5 Input Types <i>(start: focusin keypress | stop: blur)</i>
 
 The default <b>Scroll Tracking</b> area is the user's browser window height. (TO DO)
+
+You can Switch Off the Default Tracking Options with:
+
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt$.ga_rm({def:0});&lt;/script&gt</code>
 
 --------
 
@@ -100,7 +104,7 @@ The best way to test your new tracking is via the Event-Section of the Real Time
 
 <strong>Google Analytics Hit Limits</strong>
 
-In Large Scale Enterprise Tracking and being aware of <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/limits-quotas">Google's Data collection limit</a>, you may use this script just within your most important funnels or empty the default tracking element lists in the script unless you are on Google Analytics 360.
+In Large Scale Enterprise Tracking and being aware of <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/limits-quotas">Google's Data collection limit</a>, you may use this script just within your most important funnels / switch off default tracking unless you are on Google Analytics 360.
 
 --------
 
