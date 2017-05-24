@@ -72,8 +72,8 @@
          //check if element is a <label>
          if($el.is('label')) {
              //switch to corresponding input element
-             if($('#'+$el.attr('for')).length) {
-                 $el = $('#'+$el.attr('for'));
+             if($('#' + $el.attr('for')).length) {
+                 $el = $('#' + $el.attr('for'));
              } else {
                  //if ID doesn't exist, return 0
                  return 0;
