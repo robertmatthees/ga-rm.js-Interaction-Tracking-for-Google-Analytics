@@ -32,7 +32,7 @@
          var stop = $(window).scrollTop();
 
          //run through elements with no tracking hit
-         $('[id].ga-rm-scroll:not(.ga-rm-scroll-tracked), [id].ga-rm-scroll-top:not(.ga-rm-scroll-top-tracked), [id].ga-rm-scroll-bottom:not(.ga-rm-scroll-bottom-tracked)').each(function(){
+         $('[id].ga-rm-scroll:not(.ga-rm-scroll-tracked), [id].ga-rm-scroll-in:not(.ga-rm-scroll-in-tracked), [id].ga-rm-scroll-top:not(.ga-rm-scroll-top-tracked), [id].ga-rm-scroll-bottom:not(.ga-rm-scroll-bottom-tracked)').each(function(){
              //get element position
              $el_s = $(this);
              var eh = $el_s.outerHeight();
@@ -46,6 +46,16 @@
                  } else {
                     ga('send', 'event', 'user interaction', 'scroll depth', $el_s.prop('id'), 100);
                     $el_s.addClass('ga-rm-scroll-tracked');
+                 }
+             }
+
+             //scroll-in depth tracking
+             if (($el_s.hasClass('ga-rm-scroll-in')) && (!$el_s.hasClass('ga-rm-scroll-in-tracked'))) {
+                 if(spercentage<99) {
+                     if(spercentage>=1) { $el_s.data('ga_rm_scroll_in', spercentage); }
+                 } else {
+                    ga('send', 'event', 'user interaction', 'scroll-in depth', $el_s.prop('id'), 100);
+                    $el_s.addClass('ga-rm-scroll-in-tracked');
                  }
              }
 
@@ -120,6 +130,25 @@
          //send events to google analytics
          for(i in tracked) {
              ga('send', 'event', 'user interaction', 'scroll depth', tracked[i][0], parseInt(tracked[i][1].toFixed(1)));
+         }
+
+         //create array (scroll-in)
+         var tracked = [];
+         $('[id].ga-rm-scroll-in:not(.ga-rm-scroll-in-tracked)').each(function() {
+             var this_row = {}; $el = $(this);
+             this_row[0] = $el.prop('id');
+             this_row[1] = $el.data('ga_rm_scroll_in');
+             tracked.push(this_row);
+         });
+
+         //sort array desc
+         tracked.sort(function(a, b) {
+             return b[1] - a[1];
+         });
+
+         //send events to google analytics
+         for(i in tracked) {
+             ga('send', 'event', 'user interaction', 'scroll-in depth', tracked[i][0], parseInt(tracked[i][1].toFixed(1)));
          }
 
          //create array (form)
