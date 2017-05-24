@@ -114,7 +114,7 @@ Track for how long an Element/DOM was visible in a user's browser simply by addi
 
 <code>&lt;div id="mydiv" class="ga-rm-scroll-visible"&gt;&lt;/div&gt;</code>
 
-TO-DO:
+Further:
 - Add "no interaction" init option (until min_time_on_page)
 - Add "time on page" tracker (init option) for more accurate tracking in Google Analytics
 
