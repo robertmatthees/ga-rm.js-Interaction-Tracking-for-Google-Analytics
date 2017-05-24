@@ -50,7 +50,7 @@ In Custom Tracking with HTML-Classes (below), please always use a unique ID for 
 
 --------
 
-<h2>Custom User Interaction Time Tracking (s)</h2>
+<h2>Custom User Interaction Time Tracking (seconds)</h2>
 
 Activate User Interaction Time Tacking to a Custom Element/DOM simply by adding <code><b>class="ga-rm-hover"</b></code> (start: mouseenter | stop: mouseleave change) <b>OR</b> <code><b>class="ga-rm-focus"</b></code> (start: focusin keypress | stop: blur) to the Element/DOM like Adspace- or Teaser-DIVs on your website. For example:
 
