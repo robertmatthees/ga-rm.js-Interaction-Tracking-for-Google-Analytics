@@ -90,7 +90,7 @@ Activate Custom Time until Scroll Depth Tracking in Google Analytics by adding <
 
 You can easily combine several Custom Tracking Methods by adding all the according classes to the Element/DOM:
 
-<code>&lt;div id="mydiv" class="ga-rm-hover ga-rm-scroll-top ga-rm-scroll-bottom ga-rm-visible"&gt;&lt;/div&gt;</code>
+<code>&lt;div id="mydiv" class="ga-rm-hover ga-rm-scroll-top ga-rm-scroll-bottom ga-rm-click"&gt;&lt;/div&gt;</code>
 
 -------
 
