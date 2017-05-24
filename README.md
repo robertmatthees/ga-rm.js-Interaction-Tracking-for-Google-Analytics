@@ -74,7 +74,7 @@ Activate Custom <b>Scroll Depth Tracking in Google Analytics</b> by adding <code
 
 <code>&lt;div id="mydiv" class="ga-rm-scroll"&gt;&lt;/div&gt;</code>
 
-Note: The value returned by <code><b>class="ga-rm-scroll"</b></code> can be negative if the element wasn't in the user's viewport at all. If you want to receive just values from Scrolling inside an Element (1-100%), use <code><b>class="ga-rm-scroll-in"</b></code> to get the In-Element Scroll Depth Percentage in Google Analytics.
+Note: The value returned by <code><b>class="ga-rm-scroll"</b></code> can be negative if the element wasn't in the user's viewport at all. If you want to receive just values from Scrolling inside an Element (1-100%), use <code><b>class="ga-rm-scroll-in"</b></code> to get the <b>In-Element Scroll Depth Percentage in Google Analytics</b>.
 
 --------
 
