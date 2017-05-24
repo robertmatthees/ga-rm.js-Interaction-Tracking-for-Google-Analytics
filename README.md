@@ -1,9 +1,5 @@
 # ga-rm.js Easy to implement Form Analysis plus Click- & Scrolltracking for Google Analytics
 
-Version: Development Alpha Test (working well, no errors | Scroll Tracking still to be implemented)
-
---------
-
 <strong>Implementation</strong>
 
 Simply add ga-rm.js to your Source Code and it automatically starts tracking <b>User Interaction Time with Forms Fields</b> plus <b>Scroll Depth Tracking</b> in Google Analytics on all pages of your domain:
@@ -24,12 +20,21 @@ Per default, ga-rm.js tracks the <b>User Interaction Time for Form Analysis</b> 
 - Select Dropdowns, Range Slider, Checkboxes, Radio Buttons, Input Labels <i>(start: mouseenter | stop: mouseleave change)</i>
 - Textareas, Inpout Text Fields, Input Password Fields, Date Pickers and all other HTML5 Input Types <i>(start: focusin keypress | stop: blur)</i>
 
-The default <b>Scroll Tracking</b> area is the user's browser window height. (TO DO)
+The default <b>Scroll Tracking</b> area is the document's body height.
 
-You can Switch Off the Default Tracking Options with:
+--------
 
-<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({def:0});&lt;/script&gt;</code>
+<strong>Custom Options</strong>
 
+You can Switch Off the Default Tracking Options:
+
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form:0});&lt;/script&gt;</code> (no default Form Analysis - bool)
+
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({scroll:0});&lt;/script&gt;</code> (no default Scroll Tracking - bool)
+
+<code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({min_form_timme:10});&lt;/script&gt;</code> (Minimum Interaction with Element before it gets countet in Google Analytics - in Seconds)
+
+<b>or:</b> <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({scroll:0, form: 0, min_form_timme:10});&lt;/script&gt;</code>
 --------
 
 <strong>Tracking Reference</strong>
