@@ -16,11 +16,11 @@ In addition, you can easily implement <b>Click- and Scrolltracking for Custom El
 
 <h2>Default Tracking Options</h2>
 
-Per default, ga-rm.js tracks the <b>User Interaction Time for Form Analysis</b> of the following Elements:
+Per default, ga-rm.js tracks the <b>User Interaction Time for Form Analysis</b> of the following Elements (in seconds):
 - Select Dropdowns, Range Slider, Checkboxes, Radio Buttons, Input Labels <i>(start: mouseenter | stop: mouseleave change)</i>
 - Textareas, Inpout Text Fields, Input Password Fields, Date Pickers and all other HTML5 Input Types <i>(start: focusin keypress | stop: blur)</i>
 
-The default <b>Scroll Tracking</b> area is the document's body height.
+The default <b>Scroll Tracking</b> area is the document's body height (tracked from 1-100%).
 
 --------
 
