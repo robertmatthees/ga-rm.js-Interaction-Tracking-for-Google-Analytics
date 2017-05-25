@@ -32,7 +32,7 @@ You can <b>Switch off/on the Default Tracking</b> Options and <b>Set the Minimum
 
 <code>scroll:0</code> - Default Scroll Tracking <i>(bool: 0 off / 1 on | default: 1)</i>
 
-<code>min_itimme:10</code> - Min. Interaction Time from when Element gets tracked <i>(integer: in Seconds &gt; 0 | default: 0.1)</i>
+<code>min_itime:10</code> - Min. Interaction Time from when Element gets tracked <i>(integer: in Seconds &gt; 0 | default: 0.1)</i>
 
 <b>example:</b> <code>&lt;script src="ga-rm.js"&gt;&lt;/script&gt;&lt;script&gt;$.ga_rm({form:0, scroll:0, min_itimme:10});&lt;/script&gt;</code>
 
