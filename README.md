@@ -1,4 +1,4 @@
-# ga-rm.js Easy to implement Form Analysis plus Click- & Scrolltracking in Google Analytics
+# ga-rm.js Easy to implement Form Analysis plus Click- & Scrolltracking for Google Analytics
 
 <h2>Implementation</h2>
 
