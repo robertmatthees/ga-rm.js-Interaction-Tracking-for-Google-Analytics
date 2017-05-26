@@ -68,7 +68,7 @@ Activate <b>Click Tracking (Time on Page until Click) in Google Analytics</b> by
 
 --------
 
-<h2>Custom Scroll Tracking / Scroll Depth (1-100%)</h2>
+<h2>Custom Scroll Tracking / Scroll Depth (percentage)</h2>
 
 Activate Custom <b>Scroll Depth Tracking in Google Analytics</b> by adding <code><b>class="ga-rm-scroll"</b></code> to the Element/DOM like your Content-Container. For example:
 
