@@ -116,7 +116,7 @@ Track for how long an Element/DOM was visible in a user's browser simply by addi
 
 Further:
 - Add "no interaction" init option (until min_time_on_page)
-- Add generic "time on page" tracker (init option) for a more accurate tracking in Google Analytics
+- Add generic "time on page" tracker (init option) for a more accurate Bounce Rate tracking in Google Analytics
 - Add class="ga-rm-form" to re-activate form analysis comfortably for all fields of an entire form element in case the default tracking has been switched off
 --------
 
