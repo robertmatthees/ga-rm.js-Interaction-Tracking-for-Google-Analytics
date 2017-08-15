@@ -56,7 +56,7 @@ Activate <b>User Interaction Time Tacking to a Custom Element/DOM</b> simply by 
 
 <code>&lt;div id="mydiv" class="ga-rm-hover"&gt;&lt;/div&gt;</code>
 
-<b>not:</b> <code>&lt;div id="mydiv" class="ga-rm-hover ga-rm-focus"&gt;&lt;/div&gt;</code>
+<b>not (yet):</b> <code>&lt;div id="mydiv" class="ga-rm-hover ga-rm-focus"&gt;&lt;/div&gt;</code>
 
 --------
 
